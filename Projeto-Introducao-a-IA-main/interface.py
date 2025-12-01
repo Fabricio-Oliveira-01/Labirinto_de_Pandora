@@ -26,8 +26,8 @@ class Graphics:
         # Criacao dos ambientes
         try:
             sheet_env = SpriteSheet(os.path.join("assets", "ParedesFundo.png"))
-            self.assets['floor'] = sheet_env.get_image(1, 3, 16, 16, scale=(TILE_SIZE, TILE_SIZE))
-            self.assets['wall'] = sheet_env.get_image(4, 0, 16, 16, scale=(TILE_SIZE, TILE_SIZE))
+            self.assets['floor'] = sheet_env.get_image(1, 1, 16, 16, scale=(TILE_SIZE, TILE_SIZE))
+            self.assets['wall'] = sheet_env.get_image(1, 3, 16, 16, scale=(TILE_SIZE, TILE_SIZE))
         except SystemExit:
             self.criar_asset_temporario('floor', (50, 50, 50))
             self.criar_asset_temporario('wall', (150, 150, 150))
